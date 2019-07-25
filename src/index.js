@@ -5,6 +5,8 @@ import axios from "axios";
 import Charts from "./components/Charts";
 import Navbar from "./components/Navbar";
 
+import UseLocalStorage from "./hooks/useLocalStorage";
+
 import "./styles.scss";
 
 const App = () => {
@@ -21,6 +23,7 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
+      <UseLocalStorage />
       <Charts coinData={coinData} />
     </div>
   );
